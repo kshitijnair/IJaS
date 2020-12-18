@@ -16,5 +16,6 @@ nopen_img = cv2.resize(cv2.imread('icons/nopen.jpg', 1), (50,50))
 
 #####################
 # test for icons
-# cv2.imshow("penimg", eraser_img)
-# cv2.waitKey(0)
+cv2.imshow("penimg", pen_img)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
