@@ -25,11 +25,27 @@ class Window(QWidget):
         self.s1.setTickInterval(10)
         self.s1.setTickPosition(QSlider.TicksBelow)
 
+        self.s2 = QSlider(Qt.Horizontal)
+        self.s2.setMinimum(1)
+        self.s2.setMaximum(99)
+        self.s2.setValue(25)
+        self.s2.setTickInterval(10)
+        self.s2.setTickPosition(QSlider.TicksBelow)
+
+        self.s3 = QSlider(Qt.Horizontal)
+        self.s3.setMinimum(1)
+        self.s3.setMaximum(99)
+        self.s3.setValue(25)
+        self.s3.setTickInterval(10)
+        self.s3.setTickPosition(QSlider.TicksBelow)
+
         v_box = QVBoxLayout()
         v_box.addWidget(self.le)
         v_box.addWidget(self.b1)
         v_box.addWidget(self.b2)
         v_box.addWidget(self.s1)
+        v_box.addWidget(self.s2)
+        v_box.addWidget(self.s3)
 
         self.setLayout(v_box)
         self.setWindowTitle('PyQt5 Slider')
